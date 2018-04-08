@@ -2,12 +2,16 @@
 
 import os
 
+import sys
 from keras import Input, Model
 from keras.callbacks import Callback
 from keras.layers import Conv1D, BatchNormalization, MaxPooling1D, Dropout, LSTM, Dense, Activation, np, Concatenate
 from keras.utils import to_categorical, plot_model
 from sklearn.metrics import precision_recall_fscore_support
-from tensorflow.python.lib.io.file_io import create_dir
+
+p = os.path.dirname(os.path.dirname((os.path.abspath(__file__))))
+if p not in sys.path:
+    sys.path.append(p)
 
 from project_utils import create_folder_try
 from root_dir import ROOT_DIR
