@@ -1,4 +1,4 @@
-# 根据手机传感器的数据识别用户的运动模式
+# 根据手机传感器数据识别用户运动模式
 
 [UCI数据源](https://archive.ics.uci.edu/ml/datasets/human+activity+recognition+using+smartphones)
 
