@@ -115,8 +115,9 @@ def main(data_path, output_path):
     kernel_size = 3
     pool_size = 2
     dropout_rate = 0.15
-    f_act = 'relu'
     n_classes = 6
+
+    f_act = 'relu'
 
     # 三个子模型的输入数据
     main_input1 = Input(shape=(128, 3), name='main_input1')
